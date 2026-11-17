@@ -1,70 +1,22 @@
-# 🫀 Heart Disease Prediction Using Machine Learning
+# Heart Disease Prediction
 
-This project aims to predict the presence of heart disease in patients based on clinical data. By using various machine learning models and proper data preprocessing techniques, this solution can assist hospitals in early diagnosis and prioritization of at-risk patients.
+## Problem
+Use clinical indicators to predict heart disease and highlight key risk indicators.
 
----
+## Data
+The project uses heart-disease data in the analysis notebook. The repository contains the notebook; consult it for the exact input-data path and format.
 
-## 📌 Project Objectives
+## Approach
+Evaluated Support Vector Machine (SVM) and Gradient Boosting (GBM) models for classification.
 
-- Perform Exploratory Data Analysis (EDA)
-- Clean and preprocess medical data (remove outliers, handle skewness)
-- Apply feature engineering and encoding
-- Train multiple ML models and compare their performance
-- Recommend the best model for deployment in hospital systems
-- Provide clinical suggestions based on model insights
+## Result
+The project reports an **F1 score of 0.79** and identifies key risk indicators.
 
----
+## How to Run
+1. Clone this repository.
+2. Install Python, Jupyter, pandas, NumPy, and scikit-learn.
+3. Open and run `PRCP-1016-HeartDieseasePred.ipynb`.
+4. Provide the input data in the location expected by the notebook.
 
-## 🗃️ Dataset
-
-- Total Records: `180`
-- Columns: `14`
-- Target Variable: `heart_disease_present`
-- Key Features: `thal`, `chest_pain_type`, `oldpeak_eq_st_depression`, `exercise_induced_angina`, `age`, etc.
-
----
-
-## 🧹 Data Preprocessing
-
-- Handled outliers using IQR method
-- Skewed features were identified and assessed
-- One-Hot Encoding used for categorical variables
-- StandardScaler / MinMaxScaler applied to numerical features
-- Checked multicollinearity using correlation matrix
-
----
-
-## 🤖 Models Used
-
-| Model                | Accuracy | F1-Score (Class 1) |
-|---------------------|----------|--------------------|
-| SVM                 | 0.82     | 0.79               |
-| Gradient Boosting   | 0.82     | 0.79               |
-| Random Forest       | 0.80     | 0.77               |
-| Logistic Regression | 0.76     | 0.74               |
-| Decision Tree       | 0.64     | 0.58               |
-
-✅ **Best Models:** SVM and Gradient Boosting (balanced performance)
-
----
-
-## 📊 Visualizations
-
-- Heatmaps
-- Boxplots before/after outlier removal
-- Confusion matrices
-- Classification metrics
-- Model comparison bar chart
-
----
-
-## 🏥 Suggestions to Hospital
-
-- Screen patients with abnormal `thal`, high `oldpeak`, or `exercise_induced_angina`
-- Use predictive insights to prioritize critical patients
-- Encourage routine stress testing and cholesterol monitoring
-
----
-
-
-
+## Tech Stack
+Python, pandas, NumPy, scikit-learn, SVM, Gradient Boosting, Jupyter Notebook
